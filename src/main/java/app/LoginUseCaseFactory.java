@@ -48,6 +48,7 @@ public final class LoginUseCaseFactory {
             LoginUserDataAccessInterface userDataAccessObject) {
 
         // Notice how we pass this method's parameters to the Presenter.
+
         final LoginOutputBoundary loginOutputBoundary = new LoginPresenter(viewManagerModel,
                                                                            loggedInViewModel, loginViewModel);
         final LoginInputBoundary loginInteractor = new LoginInteractor(
